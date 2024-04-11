@@ -12,4 +12,11 @@ describe('App', () => {
     // Assert that the text "Next, open up App.js to start working on your app!" is rendered
     expect(getByText('Next, open up App.js to start working on your app!')).toBeTruthy();
   });
+  // Note: This test is expected to fail by default
+  it('should display a button', () => {
+    const { getByText } = render(<App />);
+    
+    // Assert that the button is rendered. 
+    expect(getByText('Press me!')).toBeTruthy();
+  });
 });
