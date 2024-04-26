@@ -12,5 +12,5 @@ configuration:
     - App.js
     project_menu:
       run: npx expo start --tunnel
-      install: npm install
-      test: npm test
+      install: yarn install
+      test: yarn test
