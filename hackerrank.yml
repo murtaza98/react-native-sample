@@ -4,7 +4,7 @@ configuration:
   readonly_paths:
     - tests
   scoring:
-    command: npm install && rm -rf junit.xml && npm test
+    command: yarn install && rm -rf junit.xml && yarn test
     files:
         - junit.xml
   ide_config:
